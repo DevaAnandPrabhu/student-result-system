@@ -36,3 +36,4 @@ Built using Python, HTML/CSS, Bootstrap, and SQLite.
 ```markdown
 ![Login Page](static/screens/login.png)
 ![Dashboard](static/screens/dashboard.png)
+![Result Page](static/screens/result.png)
