@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h2 class="mb-4">📊 Your Result</h2>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5>Name: {{ student[0] }}</h5>
+            <h6>Register No: {{ student[1] }}</h6>
+            <h6>Department: {{ student[2] }}</h6>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in marks %}
+            <tr>
+                <td>{{ row[2] }}</td>  <!-- subject -->
+                <td>{{ row[3] }}</td>  <!-- mark -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="/logout" class="btn btn-danger mt-3">Logout</a>
+</div>
+
+</body>
+</html>
